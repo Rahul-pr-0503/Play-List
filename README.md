@@ -8,9 +8,10 @@ HTML Code
     <title>Song App</title>
     <link rel="icon" href="https://publicovationpr.wordpress.com/wp-content/uploads/2013/01/images.jpg">
     <link rel="stylesheet" href="styles.css">
+    <img src="https://t4.ftcdn.net/jpg/08/57/61/19/360_F_857611916_TJPWP2AHQgPsa2PSBs12gb82qW69s2eJ.jpg" width="100%">
 </head>
 <body>
-    <h1>Song App</h1>
+    <h1 class="rd">Song App</h1>
     <div class="playlist-container">
         <h2>Playlist</h2>
         <ul id="playlist"></ul>
@@ -27,7 +28,7 @@ HTML Code
     </div>
     <div class="song-details">
         <h2>Current Song</h2>
-        <p id="current-song"></p>
+        <h3><p id="current-song"></p></h3>
     </div>
 
     <script src="script.js"></script>
@@ -121,10 +122,12 @@ playNext(); // Start with first song
 
 CSS Code
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .playlist-container {
+    background-color: gray;
+    color: white;
     width: 50%;
     float: left;
 }
@@ -132,32 +135,42 @@ body {
 .playlist-container ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px;
 }
 
 .playlist-container li {
+    background-color: black;
+    color: white;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 10px solid white;
 }
 
 .controls {
     width: 50%;
-    float: right;
-    text-align: right;
+   
+    text-align: left;
 }
 
 .controls button {
-background-color: pink;
-cursor: pointer;
+    background-color: pink;
+    border: red;
+    border-style: dotted;
+    cursor: pointer;
     margin: 10px;
 }
 
 .song-details {
     background-color:greenyellow;
     clear: both;
-    padding: 0.5px;
+    text-shadow: 1px 2px 3px black;
+    width: 50%;
+    padding:0.5px;
 }
 
 .song-details h2 {
     margin-top: 0;
+}
+.rd{
+    background-color: darkturquoise;
+    width: 50%;
 }
